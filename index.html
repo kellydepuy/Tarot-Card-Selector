@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <title>Daily Tarot Pull</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="./styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Daily Tarot Pull</h1>
+            <p>Although I enjoy tarot, this daily tarot pull is not meant to be serious. I don't think a computer can simulate a tarot reading. So, enjoy and have fun!</p>
+        </header>
+        <main>
+            <form>
+                <label>Today's Date</label>
+                <input name="todays-date" type="date">
+                <label>First Name</label>
+                <input name="first-name" type = "text">
+                <label>Favorite Color</label>
+                <input name="color" type = "color">
+                <label>Meaningful Year</label>
+                <input name="year" type = "number">
+                <label>Did you have breakfast?</label>
+                <input name="breakfast" type="checkbox">
+                <label>Pick a Number 1-100</label>
+                <input type="range" min="1" max="100">
+                <feildset>
+                    <legend>Choose Which Image Resonates with You</legend>
+                    <label>
+                        <img src="./images/monkey-developer_gif.gif">
+                        <input name="resonant-img" type="radio">
+                    </label>
+                    <label>
+                        <img src="./images/piggy_gif.webp">
+                        <input name="resonant-img" type="radio">
+                    </label>
+                    <label>
+                        <img src="./images/shadow_and_bone_gif.webp">
+                        <input name="resonant-img" type="radio">
+                    </label>
+                    <label>
+                        <img src="./images/vegeta_gif.webp">
+                        <input name="resonant-img" type="radio">
+                    </label>
+                </feildset>
+                <button>Get Your Card</button>
+            </form>
+        </main>
+        <footer>
+            <div>
+                <img src="">
+                <h2>Card Name</h2>
+                <p>Meaning</p>
+            </div>
+        </footer>
+        <script src ="./index.js"></script>
+    </body>
+
+
+
+</html>
+
+<!-- Photo by Viva Luna Studios on Unsplash -->

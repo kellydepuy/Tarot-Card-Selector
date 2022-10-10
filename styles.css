@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    background-color: rgb(203, 211, 194);
+
+}
+
+img {
+    width: 100%;
+}
+header {
+    text-align: center;
+    margin: 0;
+    padding: 1em 2em 2em 2em;
+}
+main {
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+
+form input {
+    width: fit-content;
+    margin-bottom: 2em;
+    padding: .5em;
+    border: 2px solid lavender;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgb(179, 179, 197);
+}
+
+form label {
+    margin-bottom: .5em;
+}
