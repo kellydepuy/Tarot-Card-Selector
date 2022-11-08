@@ -13,56 +13,66 @@
     <body>
         <header>
             <h1>Daily Tarot Pull</h1>
-            <p>Although I enjoy tarot, this daily tarot pull is not meant to be serious. I don't think a computer can simulate a tarot reading. So, enjoy and have fun!</p>
+            <p>Although I enjoy tarot, this daily tarot pull is not meant to be serious. I don't think a computer 
+                can simulate a tarot reading. So, enjoy and have fun!</p>
         </header>
-        <main>
-            <form>
-                <label>Today's Date</label>
-                <input name="todays-date" type="date">
-                <label>First Name</label>
-                <input name="first-name" type = "text">
-                <label>Favorite Color</label>
-                <input name="color" type = "color">
-                <label>Meaningful Year</label>
-                <input name="year" type = "number">
-                <label>Did you have breakfast?</label>
-                <input name="breakfast" type="checkbox">
-                <label>Pick a Number 1-100</label>
-                <input type="range" min="1" max="100">
-                <feildset>
-                    <legend>Choose Which Image Resonates with You</legend>
+        <main id="main">
+            <form id="form">
+                <div>
+                    <label>Today's Date</label>
+                    <input name="todays-date" type="date">
+                </div>
+                <div class="form-divs">
+                    <label>First Name</label>
+                    <input name="first-name" type = "text">
+                </div>
+                <div>
+                    <label>Favorite Color</label>
+                    <p><small>Click the square below to select a color.</small></p>
+                    <input name="color" type = "color">
+                </div>
+                <div>
+                    <label>A year that was meaningful to you</label>
+                    <input name="year" type = "number">
+                </div>
+                <div class="breakfast-div">
+                    <input name="breakfast" type="checkbox">
+                    <label class="checkbox-label">Check if you had breakfast</label>
+                </div>
+                <div>
+                    <label>Use the slider to pick a number</label>
+                    <input className="slider" name="slider" type="range" min="1" max="100">
+                </div>
+                
+                <feildset name="set">
+                    <legend>Select a gif that resonates with you</legend>
                     <label>
                         <img src="./images/monkey-developer_gif.gif">
-                        <input name="resonant-img" type="radio">
+                        <input id="img1" name="resonant-img" type="radio">
                     </label>
                     <label>
                         <img src="./images/piggy_gif.webp">
-                        <input name="resonant-img" type="radio">
+                        <input id="img2" name="resonant-img" type="radio">
                     </label>
                     <label>
                         <img src="./images/shadow_and_bone_gif.webp">
-                        <input name="resonant-img" type="radio">
+                        <input id="img3" name="resonant-img" type="radio">
                     </label>
                     <label>
                         <img src="./images/vegeta_gif.webp">
-                        <input name="resonant-img" type="radio">
+                        <input id="img4" name="resonant-img" type="radio">
                     </label>
                 </feildset>
                 <button>Get Your Card</button>
             </form>
         </main>
         <footer>
-            <div>
-                <img src="">
-                <h2>Card Name</h2>
-                <p>Meaning</p>
+            <div id="results-div">
             </div>
         </footer>
-        <script src ="./index.js"></script>
+        <script src ="./index.js" type="module"></script>
     </body>
 
 
 
 </html>
-
-<!-- Photo by Viva Luna Studios on Unsplash -->

@@ -6,25 +6,37 @@ body {
     margin: 0;
     font-family: 'Noto Sans Ethiopic', sans-serif;
     background-color: rgb(203, 211, 194);
-
 }
 
 img {
     width: 100%;
+    margin-bottom: 1em;;
 }
 header {
     text-align: center;
     margin: 0;
-    padding: 1em 2em 2em 2em;
+    padding: 1em 2em .5em 2em;
 }
+
+h1 {
+    color: darkolivegreen;
+}
+
+header p {
+    border-bottom: 1px solid darkolivegreen;
+    border-top: 1px solid darkolivegreen;
+    padding: 1em 0;
+}
+
 main {
+    width: 90%;
+    margin: 0 auto;
     
 }
 form {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin: 1em;
+    margin: 0 1em;
 }
 
 form input {
@@ -34,8 +46,128 @@ form input {
     border: 2px solid lavender;
     border-radius: 3px;
     box-shadow: 0 1px 1px rgb(179, 179, 197);
+    background-color: rgb(244, 244, 255);
 }
 
+form input[type=radio] {
+    display: none;
+}
+
+/* use in javascript */
+.img-checked-border {
+    border: 3px solid darkblue;
+}
+
+form input[type=color] {
+    width: 10em;
+    height: 10em;
+    border: none;
+    align-self: center;
+}
+
+form input[type=checkbox] {
+    transform: scale(1.5);
+    border: 1px darkblue;
+    box-shadow: none;
+    margin-right: 2em;
+    margin-top: 1.25em;
+}
+
+.breakfast-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: .75em;
+}
+
+form input[type=range] {
+    border: none;
+    box-shadow: none;
+}
 form label {
     margin-bottom: .5em;
+}
+
+p small {
+    display: inline-block;
+    margin-top: -1.3em;
+}
+
+button {
+    margin-top: 1.5em;
+    padding: 1em;
+    border-radius: 8px;
+    border: none;
+    background-color: darkolivegreen;
+    color: white;
+    font-family:'Noto Sans Ethiopic', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: .7px;
+    box-shadow: 1px 1px 5px rgb(15, 19, 9);
+}
+
+legend {
+    margin-bottom: 1em;
+}
+
+#results-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -2em .5em 1em 1em;
+}
+.card-img {
+    width: 80%;
+    margin: 3em auto 1em auto;
+    align-self: center;
+}
+
+.card-name {
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    color: darkolivegreen;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card-info {
+    text-align: center;
+    line-height: 1.7em;
+    width: 80%;
+}
+
+.card-info-item {
+    display: inline-block;
+    letter-spacing: .05em;
+    margin: 1em auto;
+}
+
+hr {
+    width: 30%;
+    border: .1px solid darkolivegreen;
+    border-top: none;
+}
+
+#main {
+    display: initial;
+}
+
+@media (min-width: 350px) {
+    form {
+        align-items: center;
+    }
+}
+
+@media (min-width: 500px) {
+    form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    body {
+        margin: auto 2em;
+    }
 }
